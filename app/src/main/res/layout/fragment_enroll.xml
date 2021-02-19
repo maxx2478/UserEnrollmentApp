@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollview"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        tools:context=".ui.enrollUsers.EnrollUsersFragment"
+        >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/profilelayout"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginTop="18dp"
+                card_view:cardCornerRadius="50dp"
+                android:layout_centerHorizontal="true"
+                android:padding="3dp"
+                card_view:cardPreventCornerOverlap="false">
+
+                <ImageView
+                    android:id="@+id/profilephoto"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_launcher_background"
+                    tools:ignore="ContentDescription" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/addphoto"
+                    android:layout_width="85dp"
+                    android:layout_height="35dp"
+                    android:text="@string/add_photo"
+                    android:textStyle="bold"
+                    android:background="#E6FFFFFF"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="10dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@id/profilelayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content">
+
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/first_name"
+                    android:textSize="15sp"
+                    android:textColorHint="@color/black"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="13dp"
+                    android:id="@+id/firstname"
+                    />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/last_name"
+                    android:textSize="15sp"
+                    android:textColorHint="@color/black"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="13dp"
+                    android:id="@+id/lastname"
+                    />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/date_of_birth"
+                    android:textSize="15sp"
+                    android:inputType="none"
+                    android:editable="false"
+                    android:textColorHint="@color/black"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="13dp"
+                    android:id="@+id/dob"
+                    />
+
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:id="@+id/getgender"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="13dp">
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:enabled="true"
+                        android:id="@+id/male"
+                        android:text="Male"/>
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="10dp"
+                        android:textSize="15sp"
+                        android:enabled="true"
+                        android:id="@+id/female"
+                        android:text="Female"/>
+
+                </RadioGroup>
+
+
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/country"
+                    android:textSize="15sp"
+                    android:textColorHint="@color/black"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="13dp"
+                    android:id="@+id/country"
+                    />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/state"
+                    android:textSize="15sp"
+                    android:textColorHint="@color/black"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="13dp"
+                    android:id="@+id/state"
+                    />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hometown"
+                    android:textSize="15sp"
+                    android:textColorHint="@color/black"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="13dp"
+                    android:id="@+id/hometown"
+                    />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/ph_no"
+                    android:textSize="15sp"
+                    android:textColorHint="@color/black"
+                    android:inputType="number"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="13dp"
+                    android:id="@+id/phonenumber"
+                    />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_user"
+                    android:id="@+id/adduser"
+                    android:layout_marginStart="42dp"
+                    android:layout_marginEnd="42dp"
+                    android:layout_marginTop="20sp"
+                    android:padding="3dp"/>
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>

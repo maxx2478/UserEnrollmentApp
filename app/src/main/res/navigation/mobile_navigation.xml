@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/users">
+
+    <fragment
+        android:id="@+id/users"
+        android:name="com.manohar.myapplication.ui.users.UsersFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_users" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_gallery"
+            app:destination="@id/enroll" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/enroll"
+        android:name="com.manohar.myapplication.ui.enrollUsers.EnrollUsersFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_enroll" >
+        <action
+            android:id="@+id/action_enroll_to_users"
+            app:destination="@id/users" />
+    </fragment>
+
+</navigation>
